@@ -19,28 +19,22 @@ public class Main {
         months.add(new Month("November"));
         months.add(new Month("December"));
 
-        // print original list
-        System.out.println("Lista original: " + months);
+        System.out.println("Original list " + months);
 
-        //Add month of August
         months.add(7, new Month("August"));
 
-        // Print the new list
-        System.out.println("Lista con Agosto: " + months);
+        System.out.println("List with august added " + months);
 
-        //Convert the Arraylist into HashSet
         HashSet<Month> newMonths = new HashSet<>(months);
 
-        // Confirm that the HashSet does not allow duplicates and try to add August again
         newMonths.add(new Month("August"));
-        System.out.println("HashSet (without duplicates): " + newMonths);
+        System.out.println("HashSet without duplicates: " + newMonths);
 
 
         System.out.println("Print elements with a FOR loop");
         for (Month value : newMonths) {
             System.out.println(value + " ");
         }
-
 
         System.out.println("Print elements with an iterator");
         Iterator<Month> iterator = newMonths.iterator();
