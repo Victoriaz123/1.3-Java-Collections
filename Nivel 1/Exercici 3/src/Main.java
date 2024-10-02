@@ -22,7 +22,7 @@ public class Main {
                 capitalCities.put(country, capital);
             }
         } catch (IOException e) {
-            System.out.println("Error! Cannot read the file" + e.getMessage());
+            System.out.println("Error! Cannot reed the file" + e.getMessage());
             return;
         }
 
